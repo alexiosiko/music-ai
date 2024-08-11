@@ -1,17 +1,16 @@
 "use client"
 
 import { Button } from '@/components/ui/button'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation';
 import TextTransition, { presets } from 'react-text-transition';
 import { Link } from 'next-view-transitions';
 const TEXTS = ['AI Technology', 'Professional Transcribing', 'Music to Sheet', 'Accurate Conversion'];
 
-export default function first() {
-	const router = useRouter();
-	const [index, setIndex] = React.useState(0);
+export default function First() {
+	const [index, setIndex] = useState(0);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const intervalId = setInterval(
 		() => setIndex((index) => index + 1),
 		3000, // every 3 seconds
