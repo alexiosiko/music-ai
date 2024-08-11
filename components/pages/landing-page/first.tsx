@@ -25,7 +25,7 @@ export default function First() {
 			<TextTransition className='text- text-4xl text-left' springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition>
 			<div className='flex gap-4 mt-2'>
 				<Link href="/transcribe">
-					<Button size={"lg"} className="w-28">Get Started</Button>
+					<Button  size={"lg"} className="w-28">Get Started</Button>
 				</Link>
 				<Link href="/">
 					<Button size={"lg"} variant="outline" className="w-28">Learn More</Button>

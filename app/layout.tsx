@@ -6,6 +6,7 @@ import Nav from "@/components/nav/nav";
 import Footer from "@/components/footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ViewTransitions } from "next-view-transitions";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Kanit({ subsets: ["latin"], weight: "300" });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 		<ClerkProvider>
 			<ViewTransitions >
 				<html lang="en">
-					<body className={`${inter.className} dark overflow-x-hidden `}>
+					<body className={`${inter.className} dark overflow-x-hidden min-h-screen `}>
 						<main>
 							<Nav />
 							<div   className="max-w-7xl m-auto">
@@ -32,6 +33,7 @@ export default function RootLayout({
 								<Toaster />
 							</div>
 						</main>
+						<Analytics />
 					</body>
 				</html>
 			</ViewTransitions>

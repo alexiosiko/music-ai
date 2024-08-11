@@ -1,7 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/(auth)/transcribe/page": "app/(auth)/transcribe/page.js",
-  "/(public)/contact/page": "app/(public)/contact/page.js",
   "/(public)/page": "app/(public)/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(public)/contact/page": "app/(public)/contact/page.js"
 }

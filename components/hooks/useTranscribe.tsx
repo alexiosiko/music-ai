@@ -7,12 +7,15 @@ import axios from 'axios';
 
 export default function useTranscribe() {
 	const [isFetching, setIsFetching] = useState<boolean>(false);
-	const [file, setFile] = useState(null);
+	const [file, setFile] = useState<any>(null);
 	const [cliType, setCliType] = useState("vocal");
-	const [fileId, setFileId] = useState("");
-	const handleFileChange = (event: any) => {
-		setFile(event.target.files[0]);
-	  };
+	const handleRemoveFile = (event: any) => {
+		event.preventDefault(); // Prevents form submission
+		event.stopPropagation(); // Prevents label click action
+		setFile(null); // Resets the file state
+	}
+	const handleFileChange = (event: any) => setFile(event.target.files[0]);
+	
 	
 	  const handleCliTypeChange = (event: any) => {
 		setCliType(event.target.value);
@@ -68,6 +71,7 @@ export default function useTranscribe() {
 		}
 	  }
   return {
+	handleRemoveFile,
 	isFetching,
 	handleSubmit,
 	testFunction,
@@ -77,6 +81,5 @@ export default function useTranscribe() {
 	setFile,
 	cliType,
 	setCliType,
-	fileId,
   }
 }
