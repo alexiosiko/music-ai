@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+		spacing: {
+			'safe-screen-height': 'calc(100vh - 64px)', // - nav size
+		  },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -18,7 +18,7 @@ export default function First() {
 		return () => clearTimeout(intervalId);
 	}, []);
   return (
-	<div className="h-screen max-h-screen flex ">	
+	<div className="h-safe-screen-height flex ">	
 
 		<div className="m-auto flex flex-col gap-6">
 			<h1 className="relative text-gradient w-auto">Listen. Transcribe. Play.</h1>

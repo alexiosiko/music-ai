@@ -108,6 +108,13 @@ P {
 	background-repeat: no-repeat;
 }
 
+.bg-gradient {
+    background: var(--gradient);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
 	width: 17px;

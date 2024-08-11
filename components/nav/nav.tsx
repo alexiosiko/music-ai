@@ -10,16 +10,12 @@ export default function Nav() {
 	const router = useRouter();
 	const { user } = useUser();
 	return (
-	<nav className='flex justify-around absolute items-center top-0 w-[100%]'>
-		<div className='relative left-12'>
+	<nav className='flex justify-around absolute h-16 items-center top-0 w-[100%]'>
+		<Link href="/" className='relative left-12'>
 			<h1>LOGO</h1>
-		</div>
-		<div className='flex gap-4'>
-			<Link href="/">Home</Link>
-			<Link href="/transcribe">Transcribe</Link>
-			<Link href="/contact">Contact</Link>
-		</div>
-		<div className='relative right-12 flex gap-4'>
+		</Link>
+
+		<div className='relative flex gap-4'>
 			{
 				user ? 
 				<UserButton />

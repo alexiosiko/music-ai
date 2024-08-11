@@ -13,10 +13,13 @@ export default function Upload() {
 	const {cliType, handleSubmit, file, isFetching, handleCliTypeChange, handleFileChange, testFunction, handleRemoveFile } = useTranscribe();
 	return (
 
-		<form onSubmit={handleSubmit} className="gap-12 justify-center flex-col flex mt-24 max-w-xl m-auto h-screen ">
+		<form onSubmit={handleSubmit} className="gap-12 justify-center flex-col flex max-w-xl m-auto h-safe-screen-height ">
 		<div className="mx-auto justify-center gap-1.5 flex flex-col items-center">
-			<Label htmlFor="picture" className="text-custom-color bg-secondary p-12 rounded-lg">
-			Click Here to Upload a .mp3 or .wav file
+			<Label htmlFor="picture" className="text-custom-color bg-gradient p-8 rounded-lg">
+				
+			<p style={{ textShadow: '2px 2px 4px rgb(0, 0, 0)' }}>
+    Click Here to Upload a .mp3 or .wav file
+</p>
 			</Label>
 			<input // Hide the input component
 				id="picture"
@@ -36,7 +39,7 @@ export default function Upload() {
 			</label>
 		</div>
 			<div className="grid grid-cols-2 w-48 mx-auto">
-				<Button disabled={isFetching} type="submit" className="w-min mx-auto">
+				<Button disabled={isFetching || file == null} type="submit" className="w-min mx-auto">
 					{isFetching ?
 					<ScaleLoader height={20} />
 						:
