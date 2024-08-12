@@ -31,7 +31,10 @@ export default function useTranscribe() {
 			if (!file) 
 			throw Error("Please upload a music file you would like to convert")
 			
-		
+			toast({
+				title: "Please wait for AI model to convert your music to sheet",
+				description: "Your file will automatically download"
+			})
 			const formData = new FormData();
 			formData.append("file", file);
 			
