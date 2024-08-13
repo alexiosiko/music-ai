@@ -13,13 +13,13 @@ export default function Nav() {
 	return (
 	<nav className='flex justify-between h-12 items-center max-w-6xl w-[1152px] m-auto'>
 		<Link href="/" className='relative '>
-			<Image  width={168} height={42} src="/pngs/full-logo.png" alt='logo.png' />
+			<Image  width={28} height={42} src="/pngs/logo-other.png" alt='logo.png' />
 		</Link>
 
 		<div className='relative flex gap-4  justify-end'>
 			<Link href="/">Home</Link>
 			<Link href="/">FAQ</Link>
-			<Link href="/">Contact</Link>
+			<Link href="/contact">Contact</Link>
 			{
 				user ? 
 				<UserButton />

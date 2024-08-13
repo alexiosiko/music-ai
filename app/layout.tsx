@@ -27,11 +27,9 @@ export default function RootLayout({
 					<body className={`${inter.className} dark overflow-x-hidden min-h-screen `}>
 						<main>
 							<Nav />
-							<div className="max-w-7xl m-auto">
-								{children}
-								<Footer />
-								<Toaster />
-							</div>
+							{children}
+							<Footer />
+							<Toaster />
 						</main>
 						<Analytics />
 					</body>

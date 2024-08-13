@@ -2,17 +2,13 @@
   "node": {
     "f212e24e2d6ad62cad776ee10101b04c04242a0e": {
       "workers": {
-        "app/(auth)/transcribe/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Calexi%5C%5CDocuments%5C%5Creact%5C%5Cmusic-ai%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/_not-found/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Calexi%5C%5CDocuments%5C%5Creact%5C%5Cmusic-ai%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
         "app/(public)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Calexi%5C%5CDocuments%5C%5Creact%5C%5Cmusic-ai%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(auth)/transcribe/page": "action-browser",
-        "app/_not-found/page": "action-browser",
         "app/(public)/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "AM3c2GPJdTqiXWPDDizSkjFgaT1dNBYrXGS5zCV0ubA="
+  "encryptionKey": "p7N4WnGcI/1W9hlTe/rkOGBgIUEXN4aRT1zTDv2uwLs="
 }

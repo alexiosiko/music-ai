@@ -1,4 +1,3 @@
 {
-  "/(auth)/transcribe/page": "app/(auth)/transcribe/page.js",
   "/(public)/page": "app/(public)/page.js"
 }
