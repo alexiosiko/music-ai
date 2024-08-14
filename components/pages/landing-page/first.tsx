@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import TextTransition, { presets } from 'react-text-transition';
 import { Link } from 'next-view-transitions';
 import AnimatedDiv from '@/components/animations/animatediv';
+import InsideBody from '@/components/other/subbody';
 const TEXTS = ['AI Technology', 'Professional Transcribing', 'Music to Sheet', 'Accurate Conversion'];
 
 export default function First() {
@@ -19,14 +20,14 @@ export default function First() {
 		return () => clearTimeout(intervalId);
 	}, []);
   return (
-	<div className="h-safe-screen-height flex ">	
-
-		<div className="m-auto flex flex-col gap-6">
+	<InsideBody className="h-safe-screen-height flex-col flex ">	
+		<div className="m-auto flex flex-col gap-8">
 			<AnimatedDiv direction='down'> 
-				<h1 className="relative text-gradient w-auto ">Listen. Transcribe. Play.</h1>
+			<sub>AI-Powered Transcription</sub>
+				<h1 className="relative text-gradient w-auto ">Upload. Transcribe. Play.</h1>
 			</AnimatedDiv>
 			<AnimatedDiv delay={0.5}>
-				<TextTransition className='text-4xl text-left -mt-7' springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition>
+				<TextTransition className='text-4xl text-left -mt-6' springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition>
 			</AnimatedDiv>
 			<AnimatedDiv direction='up' delay={1} className='flex gap-4'>
 				<Link href="/transcribe">
@@ -37,7 +38,7 @@ export default function First() {
 				</Link>
 			</AnimatedDiv>
 		</div>
-	
-	</div>
+
+	</InsideBody>
   )
 }

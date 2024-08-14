@@ -60,6 +60,7 @@ export default function Upload() {
 					Remove File
 				</Button>
 			</div>
-		</form>
+			<p>We recommend <a href="https://musescore.org/en" target="_blank" className="underline-offset-2 underline">MuseScore</a>  to edit, view, and play your midi file</p>
+			</form>
 	);
 }

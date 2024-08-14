@@ -95,6 +95,11 @@ P {
 	font-size: 20px;
 }
 
+sub {
+	font-size: 15px;
+	color: var(--accent);
+}
+
 .text-gradient {
 	background: var(--gradient);
 	-webkit-background-clip: text;
@@ -135,3 +140,4 @@ P {
 	background-color: var(--tertiary);
   }
   
+
