@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import useTranscribe from "@/components/hooks/useTranscribe";
 import { ScaleLoader } from "react-spinners";
 import { Label } from "@/components/ui/label";
-import { MdFileUpload, MdFormatStrikethrough } from "react-icons/md";
+import { MdFileUpload } from "react-icons/md";
 import { MdAudioFile } from "react-icons/md";
 
 
@@ -27,8 +27,7 @@ export default function Upload() {
 						<>
 							<MdFileUpload size={72}/>	
 							<h2>
-							Click Here to Upload A File
-								
+								Click Here to Upload A File
 							</h2>
 							<p >
 								File must be .wav or .mp3
@@ -46,7 +45,7 @@ export default function Upload() {
 						{isFetching && 
 							<>
 								<ScaleLoader height={24} color="white" />
-								<p>Please wait</p>
+								<p>Tanscribing... Do not close this page</p>
 							</>
 						}
 					</div>
