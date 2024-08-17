@@ -5,7 +5,7 @@ import AnimatedDiv from '@/components/animations/animatediv'
 
 export default function Second() {
   return (
-	<div id='learm-more' className='items-center max-lg:text-center flex flex-col text-background'>
+	<div id='learn-more' className='items-center max-lg:text-center flex flex-col text-background'>
 		<AnimatedDiv>
 			<h1>Fast. Easy. Simple</h1>
 		</AnimatedDiv>
