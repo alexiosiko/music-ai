@@ -8,7 +8,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ViewTransitions } from "next-view-transitions";
 import { Analytics } from "@vercel/analytics/react"
 
-const inter = Kanit({ subsets: ["latin"], weight: "300" });
+const inter = Kanit({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
 	title: "Music to Sheet",

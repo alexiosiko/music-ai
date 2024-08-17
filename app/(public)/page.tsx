@@ -6,6 +6,9 @@ import Second from "@/components/pages/landing-page/second";
 import Image from "next/image";
 import musescore from "@/public/images/musescore.jpg"
 import InsideBody from "@/components/other/subbody";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 
 export default function Home() {
 
@@ -14,11 +17,14 @@ export default function Home() {
 		<First />
 		<div className="bg-foreground">
 			<InsideBody>
-				<Image className="mb-24 mx-auto top-4 relative rounded-lg" src={musescore} alt="sheet-music" />
+				<Image className="mb-24 max-w-4xl mx-auto top-4 relative rounded-lg" src={musescore} alt="sheet-music" />
 				<Second />
+				<Link href="/transcribe" className='w-full pb-36 flex justify-center '>
+					<Button size={"lg"} className="w-2/5 bg-background text-foreground">Try it Now!</Button>
+				</Link>
 			</InsideBody>
 		</div>
-    </div>
+    </div>	
   );
 
   

@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
 		spacing: {
-			'safe-screen-height': 'calc(100vh - 48px)', // - nav size
+			'safe-screen-height': 'calc(100vh - 56px)', // - nav size
 		  },
       colors: {
         border: "hsl(var(--border))",
