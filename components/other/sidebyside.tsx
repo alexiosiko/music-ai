@@ -5,9 +5,9 @@ export default function SideBySide({children, className }: {
 	className?: string
 }) {
 	return (
-		<div className={`flex ${className}`}>
-			<div className='w-1/2 h-[100%]'>{children[0]}</div>
-			<div className='w-1/2 h-[100%]'>{children[1]}</div>
+		<div className={`lg:flex max-lg:w-full ${className}`}>
+			<div className='lg:w-1/2 h-[100%]'>{children[0]}</div>
+			<div className='lg:w-1/2 h-[100%]'>{children[1]}</div>
 		</div>
 	)
 }

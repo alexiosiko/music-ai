@@ -14,9 +14,9 @@ export default function Upload() {
 	const {cliType, handleSubmit, file, isFetching, handleCliTypeChange, handleFileChange, testFunction, handleRemoveFile } = useTranscribe();
 	return (
 		<form onSubmit={handleSubmit} className="gap-12 justify-center flex-col flex max-w-xl m-auto h-safe-screen-height ">
-			<h2>Transcribe your File</h2>
+			<h2 className="text-center">Transcribe your File</h2>
 			<div className="mx-auto justify-center gap-1.5 flex flex-col items-center">
-				<Label htmlFor="picture" className="outline-dashed w-[600px] aspect-video justify-center flex flex-col gap-4 items-center rounded-lg">
+				<Label htmlFor="picture" className="outline-dashed w-full lg:aspect-video p-4 justify-center flex flex-col gap-4 items-center rounded-lg">
 					{file 
 						?
 						<>
@@ -26,10 +26,10 @@ export default function Upload() {
 						:
 						<>
 							<MdFileUpload size={72}/>	
-							<h2>
+							<h2 className="max-lg:text-lg">
 								Click Here to Upload A File
 							</h2>
-							<p >
+							<p className="max-lg:text-xs">
 								File must be .wav or .mp3
 							</p>
 							<input // Hide the input component
@@ -45,7 +45,7 @@ export default function Upload() {
 						{isFetching && 
 							<>
 								<ScaleLoader height={24} color="white" />
-								<p>Tanscribing... Do not close this page</p>
+								<p className="max-lg:text-center">Tanscribing... Do not close this page</p>
 							</>
 						}
 					</div>
@@ -59,7 +59,7 @@ export default function Upload() {
 					Remove File
 				</Button>
 			</div>
-			<p>We recommend <a href="https://musescore.org/en" target="_blank" className="underline-offset-2 underline">MuseScore</a>  to edit, view, and play your midi file</p>
+			<p className="max-lg:text-center">We recommend <a href="https://musescore.org/en" target="_blank" className="underline-offset-2 underline">MuseScore</a>  to edit, view, and play your midi file</p>
 			</form>
 	);
 }

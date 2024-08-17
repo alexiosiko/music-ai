@@ -16,16 +16,16 @@ export default function First() {
 
 	useEffect(() => {
 		const intervalId = setInterval(
-		() => setIndex((index) => index + 1),
-		3000, // every 3 seconds
+			() => setIndex((index) => index + 1),
+			3000, // every 3 seconds
 		);
 		return () => clearTimeout(intervalId);
 	}, []);
   return (
-	<InsideBody className="h-safe-screen-height relative flex-col flex ">	
+	<InsideBody className="lg:h-safe-screen-height relative flex-col flex ">	
 		<SideBySide className="h-[100%]">
-			<AnimatedDiv delay={0.2} className='h-full flex flex-col justify-center gap-6'>
-					<h1 className="relative text-gradient w-auto ">Convert your audio to sheet-music</h1>
+			<AnimatedDiv delay={0.2} className='h-full flex flex-col max-lg:text-center max-lg:items-center justify-center gap-6'>
+				<h1 className="relative text-gradient w-auto ">Convert your audio to sheet-music</h1>
 				<AnimatedDiv delay={0.5}>
 					<TextTransition className='text-2xl text-left' springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition>
 				</AnimatedDiv>
@@ -38,7 +38,7 @@ export default function First() {
 					</Link>
 				</AnimatedDiv>
 			</AnimatedDiv>
-			<AnimatedDiv className='h-full flex flex-col justify-center'>
+			<AnimatedDiv className='max-lg:hidden h-full flex flex-col justify-center'>
 				<Image className='w-full square' alt='landing-image' src="/images/landing-image.png" width={920} height={920} />
 			</AnimatedDiv>
 		</SideBySide>
