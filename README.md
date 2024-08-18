@@ -1,1 +1,1 @@
-<a href="https://musictosheet.com"><h1>DEMO</h1></a>
+<h1><a href="https://musictosheet.com">DEMO</a></h1>
