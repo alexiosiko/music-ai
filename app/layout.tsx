@@ -34,7 +34,7 @@ export default function RootLayout({
 			<ViewTransitions >
 				<html lang="en">
 					<body className={`${inter.className} dark overflow-x-hidden min-h-screen `}>
-						<main>
+						<main className="relative">
 							<Nav />
 							{children}
 							<Footer />
