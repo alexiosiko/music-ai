@@ -1,3 +1,5 @@
 {
-  "/(public)/page": "app/(public)/page.js"
+  "/(public)/page": "app/(public)/page.js",
+  "/(public)/piano/page": "app/(public)/piano/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
