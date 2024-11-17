@@ -25,7 +25,7 @@ export default function First() {
 	<InsideBody className="h-safe-screen-height relative flex-col flex ">	
 		<SideBySide className="h-[100%]">
 			<AnimatedDiv delay={0.2} className='h-full flex flex-col max-lg:text-center max-lg:items-center justify-center gap-6'>
-				<h1 className="relative text-gradient w-auto ">Convert your audio to sheet-music</h1>
+				<h1 className="relative w-auto ">Convert your audio to sheet-music</h1>
 				<AnimatedDiv delay={0.5}>
 					<TextTransition className='text-2xl text-left' springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition>
 				</AnimatedDiv>

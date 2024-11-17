@@ -12,3 +12,12 @@ export function stopCurrentAudios(audios: Audio[]) {
 		audios[i].howl.stop();
 	}
 }
+
+export function wait(ms: number): Promise<void> {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export const getRandomBetween = (aInclusive: number, bInclusive: number): number => {
+	return Math.floor(Math.random() * (bInclusive - aInclusive + 1)) + aInclusive;
+};
+

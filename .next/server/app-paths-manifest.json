@@ -1,5 +1,7 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/(public)/page": "app/(public)/page.js",
   "/(public)/piano/page": "app/(public)/piano/page.js",
+  "/(public)/sheet-music/page": "app/(public)/sheet-music/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

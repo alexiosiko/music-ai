@@ -2,12 +2,10 @@
 
 import { Link } from 'next-view-transitions'
 import React from 'react'
-import { useRouter } from 'next/navigation'
 import { SignInButton, SignUpButton, UserButton, useUser } from '@clerk/nextjs'
 import Image from 'next/image'
 
 export default function Nav() {
-	const router = useRouter();
 	const { user } = useUser();
 	return (
 	<nav className='flex justify-between h-14 items-center max-w-6xl w-screen m-auto '>
@@ -17,6 +15,7 @@ export default function Nav() {
 		<div className='relative flex gap-8  justify-end right-4'>
 			<Link href="/">Home</Link>
 			<Link href="/piano">Ear Training</Link>
+			<Link href="/sheet-music">Sheet Music Training</Link>
 			{
 				user ? 
 				<UserButton />

@@ -33,7 +33,7 @@ export default function RootLayout({
 		<ClerkProvider>
 			<ViewTransitions >
 				<html lang="en">
-					<body className={`${inter.className} dark overflow-x-hidden min-h-screen `}>
+					<body className={`${inter.className} overflow-x-hidden min-h-screen `}>
 						<main className="relative">
 							<Nav />
 							{children}
